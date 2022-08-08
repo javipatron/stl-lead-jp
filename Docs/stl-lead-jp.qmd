@@ -34,7 +34,7 @@ Create a scatterplot
 ```{r}
 stl_lead_plot = ggplot(data = stl_lead, aes(x=pct_elevated,
                              y=white)) +
-  geom_point(size=2, alpha=0.5, color = "blue") + labs(title = "My Graph")
+  geom_point(size=2, alpha=0.5, color = "green") + labs(title = "My Graph")
 
 stl_lead_plot
 ```
@@ -64,7 +64,7 @@ ggsave(plot = stl_lead_plot, here::here("Figs", "my_graph.png"),
 ###Creating a Histogram
 
 ```{r}
-graph_hist <- ggplot(data=stl_lead, aes(x=pct_elevated)) + geom_histogram(color="red", alpha = 0.8)
+graph_hist <- ggplot(data=stl_lead, aes(x=pct_elevated)) + geom_histogram(color="blue", alpha = 0.8)
 
 graph_hist
 ```

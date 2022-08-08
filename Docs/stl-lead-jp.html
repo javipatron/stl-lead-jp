@@ -165,7 +165,7 @@ dbl (14): geoID, tractCE, countTested, pctElevated, totalPop, totalPop_MOE, ...
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>stl_lead_plot <span class="ot">=</span> <span class="fu">ggplot</span>(<span class="at">data =</span> stl_lead, <span class="fu">aes</span>(<span class="at">x=</span>pct_elevated,</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                             <span class="at">y=</span>white)) <span class="sc">+</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">2</span>, <span class="at">alpha=</span><span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"My Graph"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">2</span>, <span class="at">alpha=</span><span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"green"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"My Graph"</span>)</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>stl_lead_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -193,7 +193,7 @@ dbl (14): geoID, tractCE, countTested, pctElevated, totalPop, totalPop_MOE, ...
 <h3 class="anchored" data-anchor-id="section-1"></h3>
 <p>###Creating a Histogram</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>graph_hist <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>stl_lead, <span class="fu">aes</span>(<span class="at">x=</span>pct_elevated)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">color=</span><span class="st">"red"</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>)</span>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>graph_hist <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>stl_lead, <span class="fu">aes</span>(<span class="at">x=</span>pct_elevated)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">color=</span><span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>graph_hist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
